@@ -32,6 +32,8 @@ Avant de continuer nous devons donc avoir la hiérarchie suivante :
 ```
 
 Assurez-vous que vous êtes bien dans le répertoire `TP_git_101` avant de continuer.  
-Créons un premier sous-répertoire `mkdir depot_01`, puis allons dedans.  
-Tapez la commande `git status`
+Créons un premier sous-répertoire nommé `depot_01`, puis allons dedans.  
+Tapez la commande `git status` qui va vous retournez l'erreur
+
+
 Si vous regardez le contenu du répertoire avec `ls` vous devriez constater que votre répertoire est toujours vide. Mais si vous tapez 
