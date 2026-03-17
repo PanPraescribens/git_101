@@ -21,6 +21,8 @@ Vous pouvez également scanner le document et envoyer le fichier, si vous préf�
 
 # Attendre la validation
 A priori une fois que vous avez envoyé tout cela, il faut simplement attendre validation et c'est tout.  
+C'est plutôt rapide, la mienne est arrivée au bout de quelques minutes alors que j'étais a priori un cas un peu bizarre (le système a détecté que je n'étais pas sur le campus)
+![Message de confirmation de mon status éducation](images/04_succes.png)  
 
-En attendant vous pouvez déjà utiliser votre compte github comme un dépôt distant pour vos exercices git !  
+En attendant ques les bénéfices Education soient actifs, vous pouvez déjà utiliser votre compte github comme un dépôt distant pour vos exercices git !  
 
