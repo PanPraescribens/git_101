@@ -401,11 +401,23 @@ Dans les deux cas on parle de la même chose : demander aux autorités gérant l
 Les logiciels de CI/CD comme GitLab ou pour vous GitHub proposent des interfaces modernes pour gérer cette partie, qui est hors du cadre de git à proprement parler.  
 
 ### Méthode Github
-Si vous êtes sur Github, vous allez pouvoir vous rendre dans votre dépôt sur le site web et créer une requête de fusion. Normalement Github va automatiquement détecter l'existance d'une nouvelle branche et vos commits vont automatiquement lancer un dialogue de création de PR/MR à votre prochaine connexion.  
+Si vous êtes sur Github, vous allez pouvoir vous rendre dans votre dépôt sur le site web et effectuer tout le processus de fusion de la branche sur la branche principale directement depuis l'interface web.  
 
-Validez simplement la requête, ce qui aura pour effet de fusionner les commits de la branche sur la branche principale. 
+Normalement Github va automatiquement détecter l'existance d'une nouvelle branche et le *push* de commits va automatiquement lancer un dialogue de création de PR/MR à votre prochaine connexion.  
+![la notification apparaissant sur votre page de dépôt github en cas de nouveau commit de branche](images/github_PR_notification.png)  
 
-Une fois l'opération validée, `origin/dev` est fusionnée avec `origin/master`, et vous n'avez plus qu'à mettre à jour votre branche `master` locale et effacer votre branche `dev` qui n'est plus nécessaire.  
+Cliquez la notification pour ouvrir le dialogue de création de requête :  
+![l'écran de création de pull request sur github](images/github_PR_creation.png)
+
+Dans le processus réel, c'est un collègue qui va ensuite traiter votre demande et la valider (ou pas).  
+
+![bouton de fusion de la branche avec rebase](images/github_PR_merge.png)
+Validez simplement la requête, ce qui aura pour effet de fusionner les commits de la branche sur la branche principale.  
+
+![suppression de la branche distante](images/github_PR_delete_branch.png)
+Github vous propose d'effacer la branche distante, qui vient d'être fusionnée.
+
+Une fois l'opération validée, `origin/dev` est fusionnée avec `origin/master`, et vous n'avez plus qu'à mettre à jour votre branche `master` locale via `git pull` sur votre branche `master` et effacer votre branche `dev` qui n'est plus nécessaire :  
 
 ```
 git switch master
